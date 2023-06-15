@@ -330,7 +330,6 @@ h5 {
     margin-left: 15em;
 }
 
-
 .testimonials {
     display: flex;
     justify-content: center;
@@ -345,21 +344,20 @@ h5 {
 }
 
 .testimonial-header {
-    font-family: "Markazi Text", serif;
-    font-size: 60px;
-    font-weight: 700;
-    width: 100%;
-    color: #f4ce14;
+  font-family: "Markazi Text", serif;
+  font-size: 60px;
+  font-weight: 700;
+  width: 100%;
+  color: #f4ce14;
 
 }
 
 .review-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
 
 .review {

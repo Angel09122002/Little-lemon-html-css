@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <link href="styles.css" rel="stylesheet">
@@ -9,6 +8,7 @@
 </head>
 
 <body>
+      <header>
   <div id="root"></div>
   <div class="header">
     <div class="logo">
@@ -35,23 +35,30 @@
           <p>login</p>
         </li>
       </ul>
+        </nav>
     </div>
   </div>
+    </header>
+
+    <main>
   <div class="main">
     <div class="main-content">
       <h1>Little Lemon</h1>
       <h2>Chicago</h2>
       <p>
-        "We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
-      </p>
-      <a href="/reservations">
-        <button id="button" to="/reservations">Reserve a Table</button>
-      </a>
-    </div>
-    <div class="featured">
+          "We are a family owned Mediterranean restaurant, focused on
+          traditional recipes served with a modern twist."
+        </p>
+        <a href="/reservations">
+          <button id="button" to="/reservations">Reserve a Table</button>
+        </a>
+      </div>
+      <div class="featured">
       <img src="/static/media/platos-mesero.jpg" alt="restaurantFood">
     </div>
   </div>
+    </main>
+    <section>
   <div class="specials">
     <div class="specials-head">
       <h3>Specials</h3>
@@ -59,11 +66,15 @@
     </div>
   </div>
   <div class="cards">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="/static/media/greek-salad.webp" alt="Greek Salad">
-      <div class="card-body">
-        <div class="card-title h5">Greek Salad</div>
-        <p class="card-text">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="/static/media/greek-salad.webp"
+          alt="Greek Salad"
+        />
+        <div class="card-body">
+          <div class="card-title h5">Greek Salad</div>
+          <p class="card-text">
           An authentic Greek salad with fresh chopped vegetables, herbs, feta cheese, lemon juice, and olive oil. 
         </p>
         <button type="button" class="btn btn-primary">Order Delivery</button>
@@ -94,6 +105,7 @@
       </div>
     </div>
   </div>
+    </section>
   <div class="testimonials">
     <div class="testimonial-header">
       <h1>Testimonials</h1>
@@ -122,6 +134,7 @@
         <img id="profile" src="/static/media/Franco-Velasco.png" alt="Customer photo">
         <h2>Franco Velasco.</h2>
         <p>Delicious food</p>
+      </article>
       </div>
     </div>
   </div>
@@ -130,18 +143,22 @@
       <h4>Little Lemon</h4>
       <h5>Chicago</h5>
       <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ex leo. Maecenas enim sem, laoreet at nulla
-        ac, luctus scelerisque massa. Praesent ut molestie nisi. Aliquam arcu lorem, auctor condimentum blandit id,
-        lobortis in nisi. Ut diam justo, euismod in accumsan id, vehicula sit amet tellus. Pellentesque porttitor elit
-        lacus, vitae lacinia magna ultricies quis. Etiam vitae tellus et mi hendrerit consequat. In dictum ligula in
-        elit euismod malesuada. Curabitur varius augue id tempus ultricies. Mauris suscipit porta odio, et pretium nibh
-        scelerisque ut."
-      </p>
-    </div>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at
+          ex leo. Maecenas enim sem, laoreet at nulla ac, luctus scelerisque
+          massa. Praesent ut molestie nisi. Aliquam arcu lorem, auctor
+          condimentum blandit id, lobortis in nisi. Ut diam justo, euismod in
+          accumsan id, vehicula sit amet tellus. Pellentesque porttitor elit
+          lacus, vitae lacinia magna ultricies quis. Etiam vitae tellus et mi
+          hendrerit consequat. In dictum ligula in elit euismod malesuada.
+          Curabitur varius augue id tempus ultricies. Mauris suscipit porta
+          odio, et pretium nibh scelerisque ut."
+        </p>
+      </div>
+    </section>
    
-  </div>
-  <div class="footer">
-    <div class="one">
+    </div>
+    <div class="footer">
+      <div class="one">
       <img src="/static/media/secondary logo.png" alt="Secondary Logo">
     </div>
     <div class="two">
@@ -193,6 +210,17 @@
         
       </ul>
     </div>
-  </div>
-  <div id="hl-aria-live-message-container" aria-live="polite" class="visually-hidden"></div>
-  <div id="hl-aria-live-alert-container" role="alert" aria-live="assertive" class="visually-hidden"></div>
+      </footer>
+    <div
+      id="hl-aria-live-message-container"
+      aria-live="polite"
+      class="visually-hidden"
+    ></div>
+    <div
+      id="hl-aria-live-alert-container"
+      role="alert"
+      aria-live="assertive"
+      class="visually-hidden"
+    ></div>
+  </body>
+</html>

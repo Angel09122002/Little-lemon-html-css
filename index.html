@@ -1,226 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <link href="styles.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Little lemon</title>
-</head>
-
-<body>
-      <header>
-  <div id="root"></div>
-  <div class="header">
-    <div class="logo">
-      <img src="/static/media/Logo.1.png" alt="Logo" />
-    </div>
-    <div class="navigation">
-      <ul>
-        <li>
-          <p>Home</p>
-        </li>
-        <li>
-          <p>About</p>
-        </li>
-        <li>
-          <p>Menu</p>
-        </li>
-        <li>
-          <p>Reservation</p>
-        </li>
-        <li>
-          <p>Order online</p>
-        </li>
-        <li>
-          <p>login</p>
-        </li>
-      </ul>
-        </nav>
-    </div>
-  </div>
-    </header>
-
-    <main>
-  <div class="main">
-    <div class="main-content">
-      <h1>Little Lemon</h1>
-      <h2>Chicago</h2>
-      <p>
-          "We are a family owned Mediterranean restaurant, focused on
-          traditional recipes served with a modern twist."
-        </p>
-        <a href="/reservations">
-          <button id="button" to="/reservations">Reserve a Table</button>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little lemon</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="Top-logo">
+        <img src="/static/media/Logo.1.png" alt="Logo" />
       </div>
-      <div class="featured">
-      <img src="/static/media/platos-mesero.jpg" alt="restaurantFood">
-    </div>
-  </div>
-    </main>
-    <section>
-  <div class="specials">
-    <div class="specials-head">
-      <h3>Specials</h3>
-      <button id="button">Online Menu</button>
-    </div>
-  </div>
-  <div class="cards">
-      <div class="card" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="/static/media/greek-salad.webp"
-          alt="Greek Salad"
-        />
+      </header>
+    <!-- navbar-->
+      <nav class="nav-top">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+      <!--nav bar end -->
+      <section>
+        <div class="main">
+          <div class="specials">
+            <div class="specials-head">
+              <h3>Specials</h3>
+              <button id="button">Online Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 1-->
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="static/media/greek-salad.webp" alt="Greek salad">
+        </div>
         <div class="card-body">
-          <div class="card-title h5">Greek Salad</div>
+          <div class="card-tittle">Greek Salad</div>
           <p class="card-text">
-          An authentic Greek salad with fresh chopped vegetables, herbs, feta cheese, lemon juice, and olive oil. 
-        </p>
-        <button type="button" class="btn btn-primary">Order Delivery</button>
-      </div>
-    </div>
+          An authentic Greek salad with fresh chopped vegetables, herbs, feta
+          cheese, lemon juice, and olive oil.
+          </p>
+          <button  type="button" class="btn btn-primary">Order Delivery</button>
+        </div>
+        <!--Card 2-->
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/static/media/paella.webp" alt="Paella">
+        </div>
+        <div class="card-body">
+          <div class="card-tittle">Paella</div>
+          <p class="card-text">
+            Paella is a classic Spanish rice dish made with rice, saffron,
+            vegetables, chicken, and seafood cooked and served in one pan.
+          </p>
+          <button type="button" class="btn btn-primary">Orde Delivery</button>
+        </div>
+        <!--Card 3-->
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="static/media/tiramisu.webp">
+        </div>
+        <div class="card-body">
+          <div class="card-tittle">Tiramisu</div>
+          <p class="card-text">
+            Tiramisù is a layered no-bake dessert consisting of ladyfingers
+            soaked with coffee and rum.
+          </p>
+          <button type="button" class="btn btn-primary">Order Delivery</button>
+        </div>
+      </section>
 
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="/static/media/paella.webp" alt="Paella">
-      <div class="card-body">
-        <div class="card-title h5">Paella</div>
-        <p class="card-text">
-          Paella is a classic Spanish rice dish made with rice, saffron, vegetables, chicken, and seafood cooked and
-          served in one pan.
-        </p>
-        <button type="button" class="btn btn-primary">Order Delivery</button>
+      <!--Testimonials section-->
+      <article class="testimonials">
+        <div class="testimonials-header">
+          <h1>Testimonials</h1>
       </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="/static/media/tiramisu.webp" alt="Tiramisu">
-      <div class="card-body">
-        <div class="card-title h5">Tiramisu</div>
-        <p class="card-text">
-          Tiramisù is a layered no-bake dessert consisting of ladyfingers soaked with coffee and rum.
-          <i class="fa-regular fa-moped"></i>
-        </p>
-        <button type="button" class="btn btn-primary">Order Delivery</button>
+      <div class="review-container">
+        <!--Review 1-->
+        <div class="review">
+          <img id="rating" src="/static/media/rating.png" alt="ratings">
+          <img id="profile" src="/static/media/Mikaela-camacho.png" alt="Customer-photo">
+          <h2>Mikaela Cmacho</h2>
+          <p>Really enjoyed the Food</p>
+        </div>
       </div>
-    </div>
-  </div>
-    </section>
-  <div class="testimonials">
-    <div class="testimonial-header">
-      <h1>Testimonials</h1>
-    </div>
-    <div class="review-container">
+      <!--Review-->
       <div class="review">
         <img id="rating" src="/static/media/rating.png" alt="ratings">
-        <img id="profile" src="/static/media/Mikaela-camacho.png" alt="Customer photo">
-        <h2>Mikaela Camacho.</h2>
-        <p>Really enjoyed the Food.</p>
-      </div>
-      <div class="review">
-        <img id="rating" src="/static/media/rating.png" alt="ratings">
-        <img id="profile" src="/static/media/Juan-alfaro.png" alt="Customer photo">
-        <h2>Juan Alfaro.</h2>
+        <img id="profile" src="static/media/Juan-alfaro.png" alt="Customer-photo">
+        <h2>Juan-alfaro</h2>
         <p>The Greek salad was excellent!</p>
       </div>
+      <!--Review 3-->
       <div class="review">
         <img id="rating" src="/static/media/rating.png" alt="ratings">
         <img id="profile" src="/static/media/Angel-Quintero.avif" alt="Customer photo">
-        <h2>Angel Quintero.</h2>
+        <h2>Angel Quintero</h2>
         <p>You have to try the tiramisu</p>
       </div>
+      <!--Review 4-->
       <div class="review">
-        <img id="rating" src="/static/media/rating.png" alt="ratings">
+        <img id="rating" src="static/media/rating.png" alt="ratings">
         <img id="profile" src="/static/media/Franco-Velasco.png" alt="Customer photo">
-        <h2>Franco Velasco.</h2>
+        <h2>Franco Velasco</h2>
         <p>Delicious food</p>
+      </div>
       </article>
-      </div>
-    </div>
-  </div>
-  <div class="about">
-    <div class="about-content">
-      <h4>Little Lemon</h4>
-      <h5>Chicago</h5>
-      <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at
-          ex leo. Maecenas enim sem, laoreet at nulla ac, luctus scelerisque
-          massa. Praesent ut molestie nisi. Aliquam arcu lorem, auctor
-          condimentum blandit id, lobortis in nisi. Ut diam justo, euismod in
-          accumsan id, vehicula sit amet tellus. Pellentesque porttitor elit
-          lacus, vitae lacinia magna ultricies quis. Etiam vitae tellus et mi
-          hendrerit consequat. In dictum ligula in elit euismod malesuada.
-          Curabitur varius augue id tempus ultricies. Mauris suscipit porta
-          odio, et pretium nibh scelerisque ut."
-        </p>
-      </div>
-    </section>
-   
-    </div>
-    <div class="footer">
+    <footer class="footer">
+      <!-- Footer section 1 -->
       <div class="one">
-      <img src="/static/media/secondary logo.png" alt="Secondary Logo">
-    </div>
-    <div class="two">
-      <ul>
-        <h5>Navigation</h5>
-        <li>
-          <a class="a" href="/">Home</a>
-        </li>
-        <li>
-          <a class="a" href="/about">About</a>
-        </li>
-        <li>
-          <a class="a" href="/menu">Menu</a>
-        </li>
-        <li>
-          <a class="a" href="/reservations">Reservations</a>
-        </li>
-        <li>
-          <a class="a" href="/order">Order Online</a>
-        </li>
-        <li>
-          <a class="a" href="/login">Login</a>
-        </li>
-      </ul>
-    </div>
-    <div class="three">
-      <ul>
-        <h5>Contact</h5>
-        <li>
-          <a id="nav" href="#">Phone Number</a>
-        </li>
-        <li>
-          <a id="nav" href="#">Email</a>
-        </li>
-        <li>
-          <a id="nav" href="#">Address</a>
-        </li>
-      </ul>
-    </div>
-    <div class="four">
-      <ul>
-        <h5>Social Media</h5>
-        <li>
-          <a id="nav" href="#">Instagram</a>
-        </li>
-        <li>
-          <a id="nav" href="#">Facebook</a>
-        </li>
+        <img src="/static/media/secondary logo.png" alt="Secondary Logo" />
+      </div>
+    
+      <!-- Footer section 2 -->
+      <div class="nav-footer">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/menu">Menu</a></li>
+          <li><a href="/reservations">Reservations</a></li>
+          <li><a href="/order">Order Online</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+      </div>
+    
+    
+      <!-- Footer section 3 -->
+      <address class="three">
+    
+        <p>Phone Number: 95412332</p>
+        <p> Email: littlelemon@gmail.com</p>
+        <p>Address: 3235 N Kildare Ave, Chicago, IL 60641</p>
+      </address>
+    
+      <!-- Footer section 4 -->
+      <div class="four">
+    
+        Follow us on:
+        Instagram: @littlelemon
+        Facebook: littlelemon21
         
-      </ul>
-    </div>
-      </footer>
-    <div
-      id="hl-aria-live-message-container"
-      aria-live="polite"
-      class="visually-hidden"
-    ></div>
-    <div
-      id="hl-aria-live-alert-container"
-      role="alert"
-      aria-live="assertive"
-      class="visually-hidden"
-    ></div>
+      </div>
+    </footer>
   </body>
 </html>

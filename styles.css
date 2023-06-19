@@ -3,42 +3,47 @@
   margin: 0;
 }
 
-/* headers*/
-
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  font-weight: 700;
-}
-h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  font-weight: 700;
-}
+/* Headers */
+h1,
+h2,
 h3 {
   font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
   font-size: 60px;
   color: #000;
   margin-top: 30px;
   margin-right: 5em;
 }
-/* headers*/
+
+/* Top logo */
 .Top-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .Top-logo img {
   max-width: 100%;
   height: auto;
 }
 
+/* Navigation */
 nav {
   background-color: #333;
   display: flex;
-  border-radius: 40px;
-  border-radius: 40px;
   justify-content: center;
+  border-radius: 40px;
 }
 
 ul {
@@ -62,18 +67,20 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+/* Main content */
 .main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  margin: 0;
-  padding: 2em;
-
   align-items: center;
   width: 95%;
+  margin: 0;
+  padding: 2em;
 }
-#button {
+
+#button,
+.btn-primary {
   background-color: #f4ce14;
   color: #000;
   font-family: "Times New Roman", Times, serif;
@@ -88,28 +95,15 @@ li a:hover {
   align-items: center;
   transition: background-color 0.3s, transform 0.3s;
 }
+
 #button:hover {
   background-color: #f8dc50;
   transform: scale(1.05);
 }
+
 #button:active {
   background-color: #e6b616;
   transform: scale(0.95);
-}
-.btn-primary {
-  background-color: #f4ce14;
-  color: #000;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 800;
-  font-size: 18px;
-  width: 12em;
-  height: 3em;
-  margin: 3em;
-  border-radius: 2em;
-  border: none;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
-  align-items: center;
-  cursor: pointer;
 }
 
 .specials-head {
@@ -117,9 +111,11 @@ li a:hover {
   align-items: center;
   font-size: 30px;
 }
+
 .specials-head h3 {
   margin-right: 10px;
 }
+
 .card-img-top {
   width: 95%;
   height: 200px;
@@ -129,6 +125,7 @@ li a:hover {
   box-shadow: 5px 10px 20px #ccc;
   margin-top: 8em;
 }
+
 .card {
   display: flex;
   justify-content: center;
@@ -137,19 +134,7 @@ li a:hover {
   margin-bottom: 3em;
   margin-top: 1em;
 }
-.card {
-  margin-top: -4em;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 3em;
-  margin-top: 1em;
-}
+
 .card-body {
   font-family: "Karla", sans-serif;
   background-color: #c7d3b2;
@@ -165,20 +150,22 @@ li a:hover {
   font-size: 30px;
   font-weight: 600;
 }
+
 .card-text {
   font-size: 20px;
 }
+
+/* Testimonials */
 .testimonials {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
   background-color: #1f2b02;
   text-align: center;
   padding-top: 1em;
-  
 }
+
 .testimonial-header {
   font-family: "Markazi Text", serif;
   font-size: 60px;
@@ -186,6 +173,7 @@ li a:hover {
   width: 100%;
   color: #f4ce14;
 }
+
 .review-container {
   display: flex;
   justify-content: center;
@@ -193,6 +181,7 @@ li a:hover {
   width: 100%;
   height: auto;
 }
+
 .review {
   width: 250px;
   height: 250px;
@@ -239,6 +228,7 @@ li a:hover {
   height: auto;
   padding: 3em 0;
 }
+
 .about-content p {
   font-family: "Karla", sans-serif;
   font-size: 18px;
@@ -246,6 +236,8 @@ li a:hover {
   color: #000;
   margin-top: -1em;
 }
+
+/* Footer */
 .footer {
   display: flex;
   justify-content: center;
@@ -255,27 +247,28 @@ li a:hover {
   margin-top: 10px;
   background-color: #1d2d01;
 }
-.one {
+
+.footer .one,
+.footer .three {
   display: flex;
-  width: 100%;
   justify-content: center;
   margin-left: 0;
   margin-right: 0;
   height: 200px;
   width: 200px;
 }
-.three {
-  margin-top: 70px;
+.four{
+  margin-left: 70px;
+  color: white;
 }
+
 .nav-footer {
+  display: flex;
   justify-content: center;
   padding: 0;
   margin: auto;
 }
-.three p {
+
+.footer p {
   color: #fff;
-}
-.four {
-  color: #fff;
-  margin-top: 70px;
 }
